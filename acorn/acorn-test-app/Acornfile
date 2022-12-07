@@ -1,0 +1,65 @@
+args: {
+  // Configure your personal welcome text
+  welcome: "Hello Acorn User!!"
+}
+
+containers: {
+  app: {
+    build: "."
+    env: {
+      "PG_USER": "postgres"
+      "PG_PASS": "secret://quickstart-pg-pass/token"
+      "WELCOME": args.welcome
+      if args.dev { "FLASK_ENV": "development" }
+    }
+    dependsOn: [
+      "db",
+      "cache"
+    ]
+    if args.dev { dirs: "/app": "./" }
+    ports: publish: "5000/http"
+  }
+  cache: {
+    image: "redis:alpine"
+    ports: "6379/tcp"
+  }
+  db: {
+    image: "postgres:alpine"
+    env: {
+      "POSTGRES_DB": "acorn"
+      "POSTGRES_PASSWORD": "secret://quickstart-pg-pass/token"
+    }
+    dirs: {
+      if !args.dev {
+        "/var/lib/postgresql/data": "volume://pgdata?subpath=data"
+      }
+    }
+    files: {
+      "/docker-entrypoint-initdb.d/00-init.sql": "CREATE TABLE squirrel_food (food text);"
+      "/docker-entrypoint-initdb.d/01-food.sql": std.join([for food in localData.food {"INSERT INTO squirrel_food VALUES ('\(food)');"}], "\n")
+    }
+    ports: "5432/tcp"
+  }
+}
+
+localData: {
+  food: [
+    "acorns",
+    "hazelnuts",
+    "walnuts"
+  ]
+}
+
+volumes: {
+  if !args.dev {
+    "pgdata": {
+      accessModes: "readWriteOnce"
+    }
+  }
+}
+
+secrets: {
+  "quickstart-pg-pass": {
+      type: "token"
+  }
+}
