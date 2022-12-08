@@ -29,6 +29,7 @@ These services are often used similarly by the teams, but they are not always us
 
 - [Dagger](dagger.md)
 - [acorn](acorn.md)
+- score.dev
 - Backstage
 
 ## Disclaimer
