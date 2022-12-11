@@ -177,7 +177,7 @@ Status: Downloaded newer image for angelbarrera92/hello@sha256:5b551974220a00f96
 Hello World
 ```
 
-What it does is build a go app, and wrap it into an OCI image. Both the building and the wrapping are done using the [chainguard container images](https://github.com/chainguard/chainguard).
+What it does is build a go app, and wrap it into an OCI image. Both the building and the wrapping are done using the [chainguard container images](https://github.com/chainguard-images).
 
 If the go tech lead decides to use any other build base image, then the chainguard image can be replaced by the new image without impacting the developers.
 
