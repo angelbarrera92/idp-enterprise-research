@@ -40,3 +40,17 @@ This is simply my vision based on my experience working in large enterprises.
 This could be not the state of my current employer, and it could be not the state of my previous employer.
 
 This repository is a work in progress, and I'll be updating it as I learn more about the topic.
+
+## Outcome
+
+Read the outcome of my research [here](outcome.md).
+
+## Contact
+
+If you would like to contact me (privately), feel free to send me a DM on:
+
+- [Twitter](https://twitter.com/angelbarrera92)
+- [LinkedIn](https://www.linkedin.com/in/angelbarrerasanchez/)
+
+Or, if you want to contribute to this repository, feel free to open an issue or a PR.
+I really would like to hear your opinion on the topic.
