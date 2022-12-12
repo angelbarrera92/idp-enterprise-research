@@ -7,7 +7,7 @@ When I say "enterprise" I mean a company with many different teams, each with it
 
 An IDP is a platform that is used by multiple teams to build their applications.
 
-## Why do we you an IDP?
+## Why do we need an IDP?
 
 In a large enterprise, there are many teams, each with its codebase, and with its way of working.
 This leads to a lot of duplication of effort, and a lot of wasted time.
@@ -54,3 +54,12 @@ If you would like to contact me (privately), feel free to send me a DM on:
 
 Or, if you want to contribute to this repository, feel free to open an issue or a PR.
 I really would like to hear your opinion on the topic.
+
+## Resources
+
+- https://github.com/adobe-platform/Adobe-Workshop-ArgoCon2022/blob/main/IDP-Capabilities.md
+- https://youtu.be/NJF6bBU6Duw
+- https://youtu.be/Ahps2IwhREw
+- https://youtu.be/p8BluR5WT5w
+- https://youtu.be/aTgINAFV3T8
+- https://community.cncf.io/events/details/cncf-cloud-native-scale-presents-building-an-application-centric-kubernetes-platform-for-enterprise-scale-w-intuit/
