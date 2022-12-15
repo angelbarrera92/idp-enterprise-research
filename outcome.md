@@ -22,7 +22,7 @@ Imagine you are working in a bank company, a new regulation could be released, a
   - Do you need to hire new developers?
   - Are you outsourcing the work?
 
-You probably face thes kinds of problems every day, and you probably have a lot of experience in solving them. But, what about the maintenance of the projects?
+You probably face these kinds of problems every day, and you probably have a lot of experience in solving them. But, what about the maintenance of the projects?
 
 **In an event of a security breach, how fast can you fix it?**
 
@@ -36,7 +36,7 @@ This leads to a lot of duplication of effort, and a lot of wasted time. **Withou
 Then, you'll need to understand that these kinds of changes, where developers are used to working in a specific way, are hard to implement.
 So there are many ways to enforce it, the two most common are:
 
-- The fast way (top-down): impose it. A CTO - or a manager - can impose a new way of working on the teams.
+- The fast way (top-down): impose it. A CTO - a C level - or a manager - can impose a new way of working on the teams.
 - The slow way (bottom-up): convince them by providing them with a better way of working, and by showing them the benefits of it.
 
 ## Second phase: Plan and design
